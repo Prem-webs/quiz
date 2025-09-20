@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Competition Registration</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="login-box">
+    <h1 class="title">Quiz Competition</h1>
+    <h3 class="subtitle">Organized by Shreeyash Polytechnic</h3>
+    <form action="/register" method="POST">
+      <div class="input-group">
+        <input type="text" name="username" required>
+        <label>Username</label>
+      </div>
+      <div class="input-group">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+      <div class="input-group">
+        <select name="role" required>
+          <option value="">Select Role</option>
+          <option value="admin">Admin</option>
+          <option value="student">Student</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <p class="register-link">Already have an account? <a href="/">Login</a></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>
